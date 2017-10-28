@@ -10,7 +10,15 @@ namespace library_management_system
     {
         static void Main(string[] args)
         {
-            Console.Write("hello word");
+            User student = new Student();
+            Admin admin = new Admin();
+            List<User> list = new List<User>();
+            list.Add(student);
+            list.Add(admin);
+            foreach (var item in list)
+            {
+                item.View();
+            }
             Console.Read();
         }
     }
