@@ -11,7 +11,7 @@ namespace library_management_system
         public string capital { get; set; }
         public string menu { get; set; }
         public string content { get; set; }
-        public ConsoleColor color { get; set; }
+        public ConsoleColor color;
 
         public Menu()
         {

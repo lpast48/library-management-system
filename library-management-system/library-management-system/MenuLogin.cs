@@ -34,7 +34,7 @@ namespace library_management_system
             try
             {
                 User user = Parse(inArray);
-                Menu menu = new Menu();
+                Menu menu = new MenuMain(user);
             }
             catch(Exception e)
             {

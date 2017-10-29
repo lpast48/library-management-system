@@ -9,9 +9,9 @@ namespace library_management_system
     class User
         : Info
     {
-        private string Name;
-        private string Surname;
-        private string Login;
+        public string Name;
+        public string Surname;
+        public string Login;
         private string Password;
 
         public User(string name, string surname, string login, string password)

@@ -8,7 +8,7 @@ namespace library_management_system
 {
     abstract class Info
     {
-        public ConsoleColor color = ConsoleColor.Gray;
+        public ConsoleColor color = ConsoleColor.DarkYellow;
         public void Colour()
         {
             Console.ForegroundColor = color;
