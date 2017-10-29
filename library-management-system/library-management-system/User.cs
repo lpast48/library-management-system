@@ -20,7 +20,6 @@ namespace library_management_system
             Surname = surname;
             Login = login;
             Password = password;
-            color = ConsoleColor.DarkYellow;
         }
 
         public User(User user)
@@ -53,6 +52,21 @@ namespace library_management_system
             Login = Console.ReadLine();
             View("Haslo: ");
             Password = Console.ReadLine();
+        }
+
+        public bool CheckLogin(string[] inArray)
+        {
+            if (inArray.Length != 2)
+            {
+                return false;
+            }
+
+            if (inArray[0].CompareTo(Login)==0 &&
+                inArray[1].CompareTo(Password)==0)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

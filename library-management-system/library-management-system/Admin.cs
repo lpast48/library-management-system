@@ -22,7 +22,7 @@ namespace library_management_system
 
         public User AddStudent()
         {
-            User student = new Student("sdf");
+            User student = new Student("1", "login", "pass");
             student.Create();
             return student;
         }

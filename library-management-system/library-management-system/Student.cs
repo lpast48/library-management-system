@@ -11,8 +11,8 @@ namespace library_management_system
     {
         private string ID;
 
-        public Student(string id)
-            : base("asf","saf","dsf","sdf")
+        public Student(string id, string login, string password)
+            : base("asf","saf",login, password)
         {
             ID = id;
         }

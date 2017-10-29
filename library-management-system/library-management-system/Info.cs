@@ -8,7 +8,6 @@ namespace library_management_system
 {
     abstract class Info
     {
-        Menu menu = new Menu();
         public ConsoleColor color = ConsoleColor.Gray;
         public void Colour()
         {
