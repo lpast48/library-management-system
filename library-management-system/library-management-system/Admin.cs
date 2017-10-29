@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace library_management_system
 {
-    class Admin : User
+    class Admin
+        : User
     {
         public Admin()
+            : base("name", "surname", "login", "password")
         {
             color = ConsoleColor.Red;
         }
@@ -16,6 +18,20 @@ namespace library_management_system
         {
             base.View();
             Console.WriteLine("admin");
+        }
+
+        public User AddStudent()
+        {
+            User student = new Student("sdf");
+            student.Create();
+            return student;
+        }
+
+        public User AddAdmin()
+        {
+            User admin = new Admin();
+            admin.Create();
+            return admin;
         }
     }
 }

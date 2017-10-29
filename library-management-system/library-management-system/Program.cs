@@ -10,11 +10,18 @@ namespace library_management_system
     {
         static void Main(string[] args)
         {
-            User student = new Student();
+            Student student0 = new Student("12");
+            Student student1 = new Student(student0);
+            student0.View();
+            student1.View();
+            User student;
             Admin admin = new Admin();
+            Admin admin2;
+            student = admin.AddStudent();
+            admin2 = (Admin)admin.AddAdmin();
             List<User> list = new List<User>();
             list.Add(student);
-            list.Add(admin);
+            list.Add(admin2);
             foreach (var item in list)
             {
                 item.View();
