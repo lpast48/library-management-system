@@ -23,7 +23,7 @@ namespace library_management_system
         private void PrepareMenu()
         {
             capital = "LOGIN";
-            menu = "exit ";
+            menu = "logout ";
             content += "podaj: [login:hasło]";
         }
 
