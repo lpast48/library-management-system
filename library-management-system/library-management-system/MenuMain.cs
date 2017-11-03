@@ -22,7 +22,7 @@ namespace library_management_system
         {
             capital = user.Name + " " + user.Surname;
             menu = "logout";
-            content = "text";
+            content = "menu główne";
         }
     }
 }
